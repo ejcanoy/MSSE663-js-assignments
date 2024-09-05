@@ -1,0 +1,24 @@
+<svg width="390" height="322" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 322">
+    <!-- Pizza base -->
+    <circle cx="195" cy="161" r="140" fill="#f5e79e" stroke="#e5b567" stroke-width="10"/>
+  
+    <!-- Tomato sauce -->
+    <circle cx="195" cy="161" r="120" fill="#e74c3c"/>
+  
+    <!-- Cheese layer -->
+    <circle cx="195" cy="161" r="100" fill="#f1c40f"/>
+  
+    <!-- Toppings - Pepperoni -->
+    <circle cx="135" cy="115" r="15" fill="#c0392b"/>
+    <circle cx="255" cy="135" r="15" fill="#c0392b"/>
+    <circle cx="175" cy="210" r="15" fill="#c0392b"/>
+  
+    <!-- Toppings - Olives -->
+    <circle cx="150" cy="175" r="7" fill="#2c3e50"/>
+    <circle cx="230" cy="120" r="7" fill="#2c3e50"/>
+  
+    <!-- Toppings - Basil leaves -->
+    <ellipse cx="265" cy="195" rx="20" ry="10" fill="#27ae60"/>
+    <ellipse cx="125" cy="140" rx="20" ry="10" fill="#27ae60"/>
+  </svg>
+  

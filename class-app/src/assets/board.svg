@@ -1,0 +1,10 @@
+<svg width="342" height="500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 500">
+  <!-- Rotated and resized board -->
+  <rect x="20" y="0" width="322" height="500" rx="40" ry="40" fill="#b5651d" stroke="#8b4513" stroke-width="10" transform="rotate(90 171 250)"/>
+
+  <!-- Rotated handle -->
+  <rect x="160" y="220" width="60" height="100" fill="#8b4513" stroke="#8b4513" stroke-width="5" rx="10" ry="10" transform="rotate(90 190 270)"/>
+
+  <!-- Handle hole for hanging -->
+  <circle cx="250" cy="30" r="10" fill="none" stroke="#f4f4f4" stroke-width="5" transform="rotate(90 171 171)"/>
+</svg>
