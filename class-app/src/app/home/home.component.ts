@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PizzasService } from '../shared/services/pizzas.service';
 import { CommonModule, NgFor } from '@angular/common';
-import { PizzaEntity } from '../lib/api-interfaces';
+import { PizzaEntity } from '../../../api/lib/api-interfaces';
 import { map, Observable } from 'rxjs';
 
 

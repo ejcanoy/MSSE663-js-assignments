@@ -1,5 +1,5 @@
 import { Injectable, } from "@angular/core";
-import { PizzaEntity } from "../../lib/api-interfaces";
+import { PizzaEntity } from "../../../../lib/api-interfaces";
 import { HttpClient } from "@angular/common/http";
 import { map, Observable } from "rxjs";
 

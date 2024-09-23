@@ -13,5 +13,5 @@ import { TitleCasePipe } from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'hello world!';
+  title = "Pizza"
 }
