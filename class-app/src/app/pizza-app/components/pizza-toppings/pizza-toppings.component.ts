@@ -2,7 +2,6 @@ import { Component, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-
 export const PIZZA_TOPPINGS_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => PizzaToppingsComponent),
@@ -19,7 +18,7 @@ export const PIZZA_TOPPINGS_ACCESSOR = {
 })
 export class PizzaToppingsComponent implements ControlValueAccessor {
   private onTouched!: () => void;
-  private onChanged!: (_: any) => void;
+  private onChanged!: (value: string[]) => void;
 
   value: string[] = [];
   focused!: string;
@@ -40,24 +39,25 @@ export class PizzaToppingsComponent implements ControlValueAccessor {
     'tomato',
   ];
 
-  registerOnChange(fn: any) {
+  registerOnChange(fn: (value: string[]) => void) {
     this.onChanged = fn;
   }
 
-  registerOnTouched(fn: any) {
+  registerOnTouched(fn: () => void) {
     this.onTouched = fn;
   }
 
   writeValue(value: string[]) {
-    this.value = value;
+    this.value = value || [];
   }
 
   updateTopping(topping: string) {
     if (this.value.includes(topping)) {
-      this.value = this.value.filter((x: string) => topping !== x);
+      this.value = this.value.filter((x) => topping !== x);
     } else {
-      this.value = this.value.concat([topping]);
+      this.value.push(topping);
     }
+
     this.onTouched();
     this.onChanged(this.value);
   }
